@@ -5,7 +5,7 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/limxinhuang/todo/todo"
+	"github.com/limxinhuang/todo-cli/todo"
 )
 
 func main() {
