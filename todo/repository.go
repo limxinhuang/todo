@@ -7,10 +7,16 @@ import (
 )
 
 // 数据文件
-const dbFile = ".todo/todos.json"
+const workDir = ".todo"
+const dbFile = "todos.json"
 
 func getDbFile() string {
 	home, _ := os.UserHomeDir()
+
+	if _, err := os.Stat(workDir); os.IsNotExist(err) {
+		os.Mkdir(filepath.Join(home, workDir), 0755)
+	}
+
 	return filepath.Join(home, dbFile)
 }
 
