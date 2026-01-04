@@ -1,3 +1,3 @@
-module github.com/limxinhuang/todo-cli
+module github.com/limxinhuang/cli
 
 go 1.22.2
